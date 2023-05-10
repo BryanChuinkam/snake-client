@@ -3,7 +3,7 @@ let connection;
 
 // handle user input
 const handleUserInput = function(data) {
-  const movementObj = {"w":"Move: up", "a":"Move: left", "s":"Move: down", "d":"Move: right"};
+  const movementObj = {"w":"Move: up", "a":"Move: left", "s":"Move: down", "d":"Move: right", "x": "Say: To Easy", "z": "Say: Look at me go", "c": "Say: Can't touch this!" };
   if (Object.keys(movementObj).includes(data)) {
     connection.write(movementObj[data]);
   }
