@@ -20,22 +20,6 @@ const connect = function() {
 
   conn.write("Name: BNC");
 
-  // setInterval(() => {
-  //   conn.write("Move: up");
-
-  // }, 2000);
-
-  // setTimeout(() => {
-  //   conn.write("Move: left");
-
-  // }, 3000);
-  
-  // conn.write("Move: down");
-  // conn.write("Move: left");
-
-
-
-
   return conn;
 };
 
