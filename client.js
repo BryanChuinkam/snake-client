@@ -18,9 +18,25 @@ const connect = function() {
     console.log('Incoming data: ', data);
   });
 
-  conn.write("Name: BNC"); 
+  conn.write("Name: BNC");
+
+  // setInterval(() => {
+  //   conn.write("Move: up");
+
+  // }, 2000);
+
+  // setTimeout(() => {
+  //   conn.write("Move: left");
+
+  // }, 3000);
+  
+  // conn.write("Move: down");
+  // conn.write("Move: left");
+
+
+
 
   return conn;
 };
 
-module.exports = {connect};
+module.exports = { connect };
